@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AudioActivity">
+
+    <TextView
+        android:id="@+id/txtGrabarAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="25dp"
+        android:gravity="center_horizontal"
+        android:text="Presione el boton de grabar audio para iniciar su grabacion"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold|italic" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivAudioRecordLogo"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/txtGrabarAudio"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="27dp"
+        android:backgroundTint="@color/teal_700"
+        app:srcCompat="@drawable/gabaraudiologo" />
+
+    <Button
+        android:id="@+id/btnGrabar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivAudioRecordLogo"
+        android:layout_alignParentBottom="true"
+        android:onClick="btnRecordClick"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="278dp"
+        android:text="GRABAR" />
+
+    <Button
+        android:id="@+id/btnDetener"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivAudioRecordLogo"
+        android:layout_alignParentBottom="true"
+        android:onClick="btnStopClick"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="87dp"
+        android:layout_marginBottom="218dp"
+        android:text="DETENER" />
+
+    <Button
+        android:id="@+id/btnEscuchar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivAudioRecordLogo"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="btnPlayClick"
+        android:layout_marginTop="144dp"
+        android:layout_marginBottom="160dp"
+        android:text="ESCUCHAR" />
+
+
+</RelativeLayout>
